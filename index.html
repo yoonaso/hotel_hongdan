@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>호텔홍단</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
+	
+	<link rel="stylesheet" href="./css/slick-theme.css">
+	
+	<link rel="stylesheet" href="./css/slick.css">
+	
+	<script src="./js/slick.min.js"></script>
+	
+	
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script> 
+	
+	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+   
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	
+<link rel="stylesheet" href="css/style.css">
+	
+<script src="./js/script.js"></script>
+
+</head>
+<body>
+
+<!--<div class="fixed-box">
+<div class="ani-text">
+        <p>
+           <span class="move-text animation">고</span>
+            <span class="move-text animation2">객</span>
+            <span class="move-text animation3">가</span>
+            <span class="move-text animation4">치</span>
+            <span class="move-text animation5">를</span> 
+            <span class="move-text animation6">우</span>
+            <span class="move-text animation7">선</span>
+            <span class="move-text animation8">하</span>
+            <span class="move-text animation9">라.</span></p>
+            
+        <p><span class="move-text animation2_1">P</span>
+            <span class="move-text animation2_2">r</span>
+            <span class="move-text animation2_3">i</span>
+            <span class="move-text animation2_4">o</span>
+            <span class="move-text animation2_5">r</span>
+            <span class="move-text animation2_6">i</span>
+            <span class="move-text animation2_7">t</span>
+            <span class="move-text animation2_8">i</span>
+            <span class="move-text animation2_9">z</span>
+            <span class="move-text animation2_10">e</span>
+            <span class="move-text animation2_11">c</span>
+            <span class="move-text animation2_12">u</span>
+            <span class="move-text animation2_13">s</span>
+            <span class="move-text animation2_14">t</span>
+            <span class="move-text animation2_15">o</span>
+            <span class="move-text animation2_16">m</span>
+            <span class="move-text animation2_17">e</span>
+            <span class="move-text animation2_18">r</span>
+            
+            <span class="move-text animation2_19">v</span>
+            <span class="move-text animation2_20">a</span>
+            <span class="move-text animation2_21">l</span>
+            <span class="move-text animation2_22">u</span>
+            <span class="move-text animation2_23">e</span>
+            </p>
+            
+        <p><span class="move-text animation3_1">H</span>
+            <span class="move-text animation3_2">O</span>
+            <span class="move-text animation3_3">T</span>
+            <span class="move-text animation3_4">E</span>
+            <span class="move-text animation3_5">L</span>
+            <span class="move-text animation3_6">H</span>
+            <span class="move-text animation3_7">O</span>
+            <span class="move-text animation3_8">N</span>
+            <span class="move-text animation3_9">G</span>
+            <span class="move-text animation3_10">D</span>
+            <span class="move-text animation3_11">A</span>
+            <span class="move-text animation3_12">N</span>
+            
+        </p>
+        
+    </div>
+</div>
+
+<div class="fade-out">
+ 
+</div>
+-->
+<div class="top-bar-wrap">
+	<div class="left-text cell">
+        <a href="index.html"><img src="./img/header_logo_blue.png" alt=""></a>
+        <a href="index.html"><img src="./img/header_logo.png" alt=""></a>
+	</div>
+	<div class="right-menu cell_r">
+		<img src="./img/hamburger_menu_blue.png" alt="">
+		<img src="./img/hamburger_menu.png" alt="">
+	</div>
+</div>
+<div class="top-bar-nav row">
+    <div class="dark-wrap cell"></div>
+    <div class="darkblue-wrap cell_r">
+        <div class="close-box">
+            <img src="./img/menu_close.png" alt="">
+        </div>
+        <div class="ul-menu">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">overview</a></li>
+                <li><a href="#">offer</a></li>
+                <li><a href="#">rooms</a></li>
+                <li><a href="#">reservation</a></li>
+                <li><a href="#">customer</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+	<div id="fullpage">
+		<div class="section section1">
+			<div class="text-box">
+				<p>beyond<br>the scene<br>from<br>hotel hongdan</p>
+			</div>
+		</div>
+		<div class="section section2">
+	    <div class="top-text">
+			<h1>our rooms</h1>
+	    </div>
+	    <div class="slide-wrap">
+		    <div class="slide-test">
+		        <div class="bed-info">
+		        <div class="wrap">
+		        	<img src="./img/deruxe.png" alt="">
+		        	<div class="pink-box">
+		        	<div class="top-text-pink">
+						<h3>DELUXE</h3>
+	        	    </div>
+	        	    
+	        	    <div class="mid-text-pink">
+						<p>객실에서 바라보는 송정 도심의 파노라믹뷰는 최상의<br>휴식을 제공합니다.</p>
+	        	    </div>
+	        	    
+	        	    <div class="btm-text-pink">
+						<p>Panoramic city view of Songjeong for best <br>relaxation.</p>
+	        	    </div>
+		        	</div>
+		        	</div>
+		        </div>
+		        
+		     <div class="bed-info">
+		          <div class="wrap">
+		          	<div class="pink-box">
+		        	<div class="top-text-pink">
+						<h3>TWIN</h3>
+	        	    </div>
+	        	    
+	        	    <div class="mid-text-pink">
+						<p>일반 객실보다 더욱 넓고 쾌적한 공간을 제공하는<br>트윈 객실입니다.</p>
+	        	    </div>
+	        	    
+	        	    <div class="btm-text-pink">
+						<p>Wider and more comfortable space than<br>regular rooms.</p>
+	        	    </div>
+		        	</div>
+		        	<img src="./img/twin.png" alt="">
+		        	</div>
+		        </div>
+		        
+		          <div class="bed-info">
+		          <div class="wrap">
+		          	<div class="pink-box">
+		        	<div class="top-text-pink">
+						<h3>SIGNATURE A</h3>
+	        	    </div>
+	        	    
+	        	    <div class="mid-text-pink">
+						<p>넓고 여유로운 공간에서 고품격 휴식을 만끽할 수<br>있는 고급형 객실입니다.</p>
+	        	    </div>
+	        	    
+	        	    <div class="btm-text-pink">
+						<p>Luxurious room you can enjoy a wide and <br>relaxing space.</p>
+	        	    </div>
+		        	</div>
+		        	<img src="./img/signatureA.png" alt="">
+		        </div>
+				</div>
+	        
+		        <div class="bed-info">
+		          <div class="wrap">
+		          	<div class="pink-box">
+		        	<div class="top-text-pink">
+						<h3>SIGNATURE B</h3>
+	        	    </div>
+	        	    
+	        	    <div class="mid-text-pink">
+						<p>객실 내에 비치된 카르텔 가구부터 미술시장에서<br>각광받고있는 다양한 미술품들을 만나보세요.</p>
+	        	    </div>
+	        	    
+	        	    <div class="btm-text-pink">
+						<p>Luxurious room with various artworks and<br>cartel furniture in the room.</p>
+	        	    </div>
+		        	</div>
+		        	<img src="./img/signatureB.png" alt="">
+					</div>
+		        </div>
+		        
+		        <div class="bed-info">
+		          <div class="wrap">
+		          	<div class="pink-box">
+		        	<div class="top-text-pink">
+						<h3>STANDARD</h3>
+	        	    </div>
+	        	    
+	        	    <div class="mid-text-pink">
+						<p>여유로운 공간과 예술적 인테리어가 어우러진<br>프리미엄 스텐다드 객실입니다.</p>
+	        	    </div>
+	        	    
+	        	    <div class="btm-text-pink">
+						<p>Relaxed space with artistic interior.</p>
+	        	    </div>
+		        	</div>
+		        	<img src="./img/standard.png" alt="">
+					</div>
+		        </div>		
+
+		    </div>
+
+		   </div>
+		    
+		</div>
+		<div class="section section3">
+
+			<div class="text-box-2">
+				<p>event &amp; notice</p>
+				
+			</div>
+			<div class="info-box row">
+					<div class="info cell">
+						<div class="img1"></div>
+						<div class="text-info">
+							<p>부산광역시 지정 모범숙박업소</p>
+							<p>2020.11.09</p>
+						</div>
+					</div>
+					
+					<div class="info cell">
+						<div class="img2"></div>
+						<div class="text-info">
+							<p>호텔홍단 9월 추석 이벤트 공지사항</p>
+							<p>2020.09.10</p>
+						</div>
+					</div>
+					
+					<div class="info cell">
+						<div class="img3"></div>
+						<div class="text-info">
+							<p>호텔홍단 전기점검 관련 공지사항</p>
+							<p>2020.11.18</p>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				
+				
+
+		</div>
+		<div class="section section4">
+        <div class="text-box-wrap">
+		    <div class="title-text">
+                <h2>the art in hotel,<br>hotel in the art</h2>
+		    </div>
+		    <div class="content-text">
+                <p>마음을 사로잡는 특별한 Art Culture시선이 닿는 곳마다<br>세계 미술시장에서 각광받고있는 다양한 미술품을 만나세요.</p>
+		    </div>
+		    <div class="translate-text">
+                <p>Meet a fascinating art culture wherever in Hongdan.<br>The world's most spotlighted works of art are displayed.</p>
+		    </div>
+		    <div class="more-btn">
+                <a href="#">more</a>
+		    </div>
+		    </div>
+		</div>
+		<div class="section section5">
+			<div class="text-box-5">
+			
+				<div class="top-text-5">
+					<h1>hongdan signature</h1>
+				</div>
+				
+				<div class="mid-korean">
+					<p>해충방제,바이러스 제어 시스템을 통한 청결관리와 화학표백을 하지 않는 침구,<br>그리고 친환경 소재의 에이스침대를 비치하여 최상의 객실 컨디션을 제공합니다.</p>
+				</div>
+				
+				<div class="btm-english">
+					<p>Pest control, cleanliness management through virus control system and bedding without chemical bleaching,<br>And we have eco-friendly Ace beds to provide the best room conditions.</p>
+				</div>
+				
+			</div>
+			
+			<div class="img-box-5 row">
+				<div class="img-box-wrap cell">
+					<img src="./img/main3_1_1.png" alt="">
+					<p><span>01</span><br>세스코<br>청결관리 시스템</p>
+				</div>
+				
+				<div class="img-box-wrap cell">
+					<img src="./img/main3_1_2.png" alt="">
+					<p><span>02</span><br>전 객실<br>카르텔 가구 비치</p>
+				</div>
+				
+				<div class="img-box-wrap cell">
+					<img src="./img/main3_1_3.png" alt="">
+					<p><span>03</span><br>전 객실<br>에이스 침대</p>
+				</div>
+				
+				<div class="img-box-wrap cell">
+					<img src="./img/main3_1_4.png" alt="">
+					<p><span>04</span><br>해수욕 후 이용<br>가능한 샤워실</p>
+				</div>
+				
+				<div class="img-box-wrap cell">
+					<img src="./img/main3_1_5.png" alt="">
+					<p><span>05</span><br>서핑학교<br>제휴</p>
+				</div>
+				
+				<div class="img-box-wrap cell">
+					<img src="./img/main3_1_6.png" alt="">
+					<p><span>06</span><br>송정해수욕장<br>1분 거리</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section fp-auto-height section6">
+		
+		<div class="btm-one-box row">
+		<div class="btm-box-wrap">
+			<div class="left-logo cell">
+				<img src="./img/footer_logo_gray.png" alt="">
+			</div>
+			<div class="right-menu cell_r">
+			<div class="ul-menu-wrap">
+				<ul class="cell">
+					<li><a href="#">overview</a></li>
+					<li><a href="#">introduce</a></li>
+					<li><a href="#">location</a></li>
+					<li><a href="#">facility</a></li>
+				</ul>
+				
+				<ul class="cell">
+					<li><a href="#">offer</a></li>
+					<li><a href="#">signature</a></li>
+					<li><a href="#">art gallery</a></li>
+					<li><a href="#">local area</a></li>
+				</ul>
+				
+				<ul class="cell">
+					<li><a href="#">rooms</a></li>
+					<li><a href="#">standard</a></li>
+					<li><a href="#">deluxe</a></li>
+					<li><a href="#">twin</a></li>
+					<li><a href="#">signature a</a></li>
+					<li><a href="#">signature b</a></li>
+				</ul>
+				
+				<ul class="cell">
+					<li><a href="#">reservation</a></li>
+					<li><a href="#">reservation</a></li>
+					<li><a href="#">guide</a></li>
+				</ul>
+				
+				<ul class="cell">
+					<li><a href="#">customer</a></li>
+					<li><a href="#">event&amp;notice</a></li>
+					<li><a href="#">faq</a></li>
+				</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="btm-two-box row">
+		<div class="btm-box-wrap-2">
+			<div class="btm-left cell">
+				<div class="info-box">
+					<p>부산광역시 지정 모범숙박업소</p>
+					<ul class="row">
+						<li class="cell"><a href="#">이용안내 및 환불규정</a></li>
+						<li class="cell">|</li>
+						<li class="cell"><a href="#">개인정보취급방침</a></li>
+						<li class="cell">|</li>
+						<li class="cell"><a href="#">이메일무단수집거부</a></li>
+						<li class="cell">|</li>
+						<li class="cell"><a href="#">INSTAGRAM</a></li>
+						
+					</ul>
+					
+					<ul class="row">
+						<li class="cell">사업자등록번호 569-06-00781</li>
+						<li class="cell">|</li>
+						<li class="cell">대표자 이정윤</li>
+						<li class="cell">|</li>
+						<li class="cell">통신판매업신고 제 2020-부산해운대-0672</li>
+						
+					</ul>
+					
+					
+					<ul class="row">
+						<li class="cell">상호명 호텔홍단</li>
+						<li class="cell">|</li>
+						<li class="cell">48070, 부산광역시 해운대구 송정중앙로 45</li>
+						<li class="cell">|</li>
+						<li class="cell">45, Songjeongjungang-ro, Haeundae-gu, Busan, Republic of Korea</li>
+						
+					</ul>
+					
+					<h4>COPYRIGHT© 2020 HOTEL HONGDAN. All rights reserved. Designed by <a href="#">FIX</a></h4>
+				</div>
+			</div>
+			<div class="btm-right cell_r">
+				<div class="info-box-wrap">
+					<p>CUSTOMER CENTER</p>
+					<p>TEL. <a href="#">+82. 51. 701. 2226</a><br>
+					        <a href="#">+82. 10. 5585. 5482</a></p>
+					<p>E-MAIL. <a href="#">byeonghee_ko@hotel-hongdan.com</a></p>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="reponsible-box">
+			<div class="res-info-box">
+				<div class="img-wrap">
+					<img src="./img/footer_logo_gray.png" alt="">
+				</div>
+				<div class="one-text">
+				<div class="top-text-wrap">
+					<p><span>AOD</span>상호명 호텔홍단</p>
+					<p >부산광역시 해운대구 송정중앙로 45 호텔홍단</p>
+					<p>45, songjeongjungang-ro, Haeundae-gu, Busan,</p>
+					<p>Republic of Korea</p>
+				</div>
+				
+				<div class="mid-text-wrap">
+					<p><span>TEL</span><a href="#">+82. 51. 701. 2226</a></p>
+					<p><a href="#">+82. 100. 5585. 5482</a></p>
+				</div>
+				
+				<div class="btm-text-wrap">
+					<p><span>E-MAIL</span><a href="#">byeonghee_ko@hotel-hongdan.com</a></p>
+				</div>
+				
+				
+				</div>
+				<div class="two-text">
+					<div class="two-text-top">
+						<a href="#">OVERVIEW</a>
+						
+					</div>
+					
+					<div class="two-text-btm">
+						<a href="#">INTRODUCE</a>
+						<a href="#">LOCATION</a>
+						<a href="#">FACILITY</a>
+					</div>
+					
+				</div>
+				<div class="three-text">
+					<div class="three-text-top">
+						<a href="#">OFFER</a>
+					</div>
+					
+					<div class="three-text-btm">
+						<a href="#">SIGNATURE</a>
+						<a href="#">ART GALLERY</a>
+						<a href="#">LOCAL AREA</a>
+					</div>
+					
+					
+				</div>
+				<div class="four-text">
+				
+					<div class="four-text-top">
+						<a href="#">ROOMS</a>
+					</div>
+					
+					<div class="four-text-mid">
+						<a href="#">STANDARD</a>
+						<a href="#">DELUXE</a>	
+						<a href="#">TWIN</a>
+					</div>
+					
+					<div class="four-text-btm">
+						<a href="#">SIGNATURE A</a>	
+						<a href="#">SIGNATURE B</a>
+					</div>
+				
+				</div>
+				<div class="five-text">
+					<div class="five-text-top">
+						<a href="#">RESERVATION</a>
+					</div>
+					
+					<div class="five-text-btm">
+						<a href="#">RESERVATION</a>
+						<a href="#">GUIDE</a>
+					</div>
+					
+				</div>
+				<div class="six-text">
+					
+					<div class="six-text-top">
+						<a href="#">CUSTOMER</a>
+					</div>
+					
+					<div class="six-text-btm">
+						<a href="#">EVENT&amp;NOTICE</a>
+						<a href="#">FAQ</a>
+					</div>
+					
+				</div>
+			</div>
+			<div class="info-2-res">
+				<div class="info-text">
+					<p>부산광역시 지정 모범숙박업소</p>
+					<p>이용안내 및 환불규정</p>
+					<p>개인정보취급방침<span >|</span>이메일무단수집거부</p>
+					<p>INSTAGRAM<span>|</span>사업자등록번호 569-06-00781</p>
+					<p>대표자 이정윤<span>|</span>통신판매업신고 제 2020-부산해운대-0672</p>
+					<h4>COPYRIGHT© 2020 HOTEL HONGDAN.<br>All rights reserved. Designed by FIX</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</body>
+</html>
